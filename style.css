@@ -17,7 +17,7 @@ main {
 } 
 
 .card {
-    height: 200px;
+    height: 250px;
     padding: 0.5%;
     border: 1px solid black;
     width: 65%;
@@ -42,7 +42,19 @@ footer {
     padding: 5%;
 }
 
+.amazon {
+    width: fit-content;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
 .recensione {
     text-decoration: solid;
     color: red;
 }
+
+.address {
+    color: darkgray
+}
+
