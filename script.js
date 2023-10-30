@@ -37,17 +37,22 @@ newColor("red")
 const img = document.querySelectorAll("img");
 
 function hideImages() {
-    for(let i=0; i<img.length; i++) {
-        img[i].style.visibility = "hidden";
+    if(img[0].style.visibility === "visible") {
+        for(let i=0; i<img.length; i++) {
+            img[i].style.visibility = "hidden";
+        }
+    }
+    else {
+        for(let i=0; i<img.length; i++) {
+            img[i].style.visibility = "visible";
+        }
     }
 }
 
-hideImages()
+// hideImages()
 
 const price = document.querySelectorAll(".price");
-// ({Math.round(Math.random()*255)}, {Math.round(Math.random()*255)}, {Math.round(Math.random()*255)})
-// console.log(price)
-// price[0].style.color = "rgb(255,255,255)"
+
 function priceColorChange() {
     for(let i=0; i<img.length; i++) {
         price[i].style.color = `rgb(
@@ -57,4 +62,4 @@ function priceColorChange() {
     }
 }
 
-priceColorChange()
+// priceColorChange()
